@@ -1,0 +1,37 @@
+import{j as e,m as a,r as o,A as c}from"./vendor-motion-CVOamqbz.js";import{b as d,c as l,d as m,e as p,f as h,g,h as u,i as y,j as f,S as x}from"./index--xcUn9pv.js";import"./vendor-react-bAWIxIan.js";const t=[{id:"mcq",title:"AMC MCQ Exam",shortDesc:"Computer-based multiple-choice examination.",detail:"The AMC Multiple Choice Question (MCQ) exam assesses medical knowledge across core disciplines. It is delivered at Pearson VUE test centres. Preparation typically involves AMC preparation resources and question banks. A pass is required before proceeding to the clinical exam.",icon:d},{id:"clinical",title:"AMC Clinical Exam",shortDesc:"Objective structured clinical examination (OSCE).",detail:"The AMC Clinical Exam is an OSCE-style assessment of clinical skills, communication, and professional behaviour. It is held in Australia at designated centres. Candidates must have passed the MCQ exam. The exam reflects real-world clinical scenarios and is a key requirement for eligibility for registration.",icon:l},{id:"english",title:"English Proficiency (IELTS/OET)",shortDesc:"Evidence of English language competency.",detail:"AHPRA requires evidence of English language skills for registration. Accepted tests include IELTS (Academic) and OET (Occupational English Test), with minimum scores set by the Board. Results are typically valid for two years. Exemptions may apply for certain qualifications or primary language instruction.",icon:m},{id:"ecfmg",title:"ECFMG / Primary Source Verification",shortDesc:"Verification of qualifications and identity.",detail:"Primary source verification (PSV) confirms your medical degree and identity with the issuing institution. ECFMG EPIC is commonly used for international medical graduates. AHPRA may require EPIC verification or direct verification. This step helps ensure credential integrity for Australian registration.",icon:p},{id:"ahpra",title:"AHPRA Registration",shortDesc:"Application to the national regulator.",detail:"AHPRA (Australian Health Practitioner Regulation Agency) manages registration for health practitioners in Australia. You apply through the Medical Board of Australia. Requirements include passing AMC exams, English proficiency, PSV, and meeting good standing and character criteria. Provisional or general registration may be granted depending on your pathway.",icon:h},{id:"supervised",title:"Supervised Practice",shortDesc:"Period of supervised practice in Australia.",detail:"International medical graduates often complete a period of supervised practice (e.g., under the Standard pathway or as part of specialist assessment). This may include internships or supervised positions in approved settings. The Medical Board sets requirements for supervision and duration before eligibility for general or specialist registration.",icon:g},{id:"specialist",title:"Specialist Pathway / General Registration",shortDesc:"Full registration or specialist recognition.",detail:"After meeting supervised practice and other requirements, you may apply for general registration with the Medical Board. For specialist recognition, you typically undergo assessment by the relevant specialist college (e.g., RACP, RACS) and then apply for specialist registration. This is the final step to independent practice in Australia.",icon:u}],b={hidden:{opacity:0},visible:{opacity:1,transition:{staggerChildren:.12,delayChildren:.1}}},v={hidden:{opacity:0,x:-16},visible:{opacity:1,x:0}};function A(){return e.jsxs("div",{className:"amc-roadmap",children:[e.jsxs(a.div,{className:"amc-roadmap-track",variants:b,initial:"hidden",whileInView:"visible",viewport:{once:!0,margin:"-60px"},style:{position:"relative",maxWidth:620,margin:"0 auto"},children:[e.jsx(a.div,{className:"amc-roadmap-line",initial:{scaleY:0},whileInView:{scaleY:1},viewport:{once:!0},transition:{duration:1.2,ease:"easeOut"},style:{position:"absolute",left:28,top:32,bottom:32,width:3,background:"var(--amc-connector)",borderRadius:2,transformOrigin:"top"}}),t.map((i,r)=>e.jsxs(a.div,{variants:v,style:{position:"relative",display:"flex",alignItems:"flex-start",gap:"1rem",marginBottom:r<t.length-1?"0.5rem":0,paddingLeft:0},children:[e.jsx("div",{className:"amc-roadmap-node",style:{width:56,height:56,borderRadius:"50%",background:"var(--amc-node-bg)",border:"3px solid var(--amc-node-border)",display:"flex",alignItems:"center",justifyContent:"center",color:"var(--amc-node-icon)",flexShrink:0,zIndex:2},children:e.jsx(i.icon,{size:26})}),e.jsx("div",{className:"amc-roadmap-card-wrap",style:{flex:1,minWidth:0},children:e.jsx(C,{step:i})})]},i.id))]}),e.jsx("style",{children:`
+        .amc-roadmap {
+          --amc-primary: #0d9488;
+          --amc-primary-dark: #0f766e;
+          --amc-secondary: #0891b2;
+          --amc-bg: rgba(13, 148, 136, 0.08);
+          --amc-border: rgba(13, 148, 136, 0.25);
+          --amc-connector: linear-gradient(180deg, var(--amc-primary) 0%, var(--amc-secondary) 100%);
+          --amc-node-bg: var(--bg-primary);
+          --amc-node-border: var(--amc-primary);
+          --amc-node-icon: var(--amc-primary);
+        }
+        [data-theme="light"] .amc-roadmap {
+          --amc-bg: rgba(13, 148, 136, 0.1);
+          --amc-border: rgba(13, 148, 136, 0.35);
+        }
+        .amc-roadmap-card {
+          background: var(--bg-glass);
+          backdrop-filter: blur(12px);
+          -webkit-backdrop-filter: blur(12px);
+          border: 1px solid var(--amc-border);
+          border-radius: 16px;
+          padding: 1rem 1.25rem;
+          transition: box-shadow 0.25s, border-color 0.25s;
+        }
+        .amc-roadmap-card:hover {
+          border-color: var(--amc-primary);
+          box-shadow: 0 8px 32px rgba(13, 148, 136, 0.12);
+        }
+        .amc-roadmap-node {
+          transition: transform 0.25s, box-shadow 0.25s;
+        }
+        .amc-roadmap-card-wrap:hover .amc-roadmap-node {
+          transform: scale(1.05);
+          box-shadow: 0 0 0 4px var(--amc-bg);
+        }
+      `})]})}function C({step:i}){const[r,n]=o.useState(!1);return e.jsxs("div",{className:"amc-roadmap-card",children:[e.jsx("button",{type:"button",onClick:()=>n(s=>!s),style:{width:"100%",textAlign:"left",border:"none",background:"none",cursor:"pointer",padding:0,color:"inherit"},children:e.jsxs("div",{style:{display:"flex",alignItems:"flex-start",justifyContent:"space-between",gap:"0.75rem"},children:[e.jsxs("div",{children:[e.jsx("h4",{style:{fontSize:"1.05rem",fontWeight:700,marginBottom:"0.25rem",color:"var(--text-primary)"},children:i.title}),e.jsx("p",{style:{fontSize:"0.875rem",color:"var(--text-secondary)",margin:0},children:i.shortDesc})]}),e.jsxs("span",{style:{display:"flex",alignItems:"center",gap:"0.35rem",fontSize:"0.8rem",fontWeight:600,color:"var(--amc-primary)",flexShrink:0},children:[e.jsx(y,{size:18}),e.jsx(a.span,{animate:{rotate:r?180:0},transition:{duration:.25},children:e.jsx(f,{size:18})})]})]})}),e.jsx(c,{initial:!1,children:r&&e.jsx(a.div,{initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:.3,ease:"easeInOut"},style:{overflow:"hidden"},children:e.jsx("p",{style:{marginTop:"1rem",paddingTop:"1rem",borderTop:"1px solid var(--amc-border)",fontSize:"0.9rem",color:"var(--text-secondary)",lineHeight:1.7},children:i.detail})})})]})}function P(){return e.jsx(x,{id:"amc-pathway",title:"AMC Pathway to Australian Medical Practice",subtitle:"Roadmap from AMC exams to registration and practice in Australia.",children:e.jsx(A,{})})}export{P as AMCPathway};
